@@ -39,6 +39,49 @@
       </div>
     </header>
 
+    <section class="container">
+      <p class="ppp">bkdnkfdkfndkndfbnfdkjnfkngkfngkfg</p>
+
+      <p class="ppp">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+        reiciendis. Repellendus fugiat sapiente, assumenda itaque, saepe
+        necessitatibus cum impedit temporibus hic molestiae nostrum consequuntur
+        accusantium provident laudantium ea ex voluptatem?
+      </p>
+
+      <button data-open-modal>open</button>
+
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+          <form action="">
+            <b>Оставьте свои данные, мы вам перезвоним</b>
+
+            <input type="text" name="name" id="name" class="modal-input" />
+            <label for="name"></label>
+
+            <input type="tel" name="tel" id="tel" class="modal-input" />
+            <label for="tel"></label>
+
+            <input type="email" name="email" id="email" class="modal-input" />
+            <label for="email"></label>
+
+            <textarea name="comment" id="comment" rows="10"></textarea>
+            <label for="comment">Комментарий</label>
+
+            <label for="" class="agreement">
+              <input type="checkbox" />
+              <span>Соглашаюсь с рассылкой и принимаю </span>
+              <a href="">Условия договора</a>
+            </label>
+
+            <button type="submit">Отправить</button>
+
+            <button data-close-modal aria-label="закрыть">close</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <div class="container">
         <div class="company-address">
@@ -109,5 +152,26 @@
         <p class="company-developer">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
+
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        backdrop: document.querySelector("[data-backdrop]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      refs.backdrop.addEventListener("click", logBackdropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+
+      function logBackdropClick() {
+        console.log("Это клик в бекдроп");
+      }
+    </script>
   </body>
 </html>

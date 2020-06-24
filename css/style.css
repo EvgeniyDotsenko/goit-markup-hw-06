@@ -471,7 +471,7 @@ footer .logo {
 }
 
 .box-address {
-  margin-right: 85px;
+  margin-right: 84px;
 }
 
 .footer-promo {
@@ -548,6 +548,10 @@ footer .logo {
 
 .icon-send {
   margin-left: 10px;
+}
+
+.subscription {
+  display: flex;
 }
 
 /* Портфолио */

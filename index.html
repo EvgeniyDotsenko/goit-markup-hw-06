@@ -53,7 +53,9 @@
           <h1 class="hero-title">
             эффективные решения для вашего бизнеса
           </h1>
-          <a href="" class="button hero-button">Заказать услугу</a>
+          <button data-modal-open class="button hero-button">
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- Особенности -->
@@ -439,5 +441,58 @@
         <p class="company-developer">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form>
+          <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+
+          <div class="modal-item">
+            <input type="text" name="name" id="name" class="modal-input" />
+            <label for="name">Имя</label>
+            <svg class="modal-svg">
+              <use href="././img/symbol-modal.svg#icon-modal-person"></use>
+            </svg>
+          </div>
+
+          <div class="modal-item">
+            <input type="tel" name="tel" id="tel" class="modal-input" />
+            <label for="tel">Телефон</label>
+            <svg class="modal-svg">
+              <use href="././img/symbol-modal.svg#icon-modal-phone"></use>
+            </svg>
+          </div>
+
+          <div class="modal-item">
+            <input type="email" name="email" id="email" class="modal-input" />
+            <label for="email">Почта</label>
+            <svg class="modal-svg">
+              <use href="././img/symbol-modal.svg#icon-modal-email"></use>
+            </svg>
+          </div>
+
+          <div class="modal-textarea">
+            <textarea name="comment" id="comment" rows="10"></textarea>
+            <label for="comment">Комментарий</label>
+          </div>
+
+          <label class="agreement">
+            <input type="checkbox" name="agreement" />
+            <span>Соглашаюсь с рассылкой и принимаю </span>
+            <a href="">Условия договора</a>
+          </label>
+
+          <button type="submit" class="modal-submit">Отправить</button>
+
+          <button data-modal-close aria-label="закрыть" class="modal-close">
+            <svg class="close-svg">
+              <use href="././img/symbol-modal.svg#icon-modal-close"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

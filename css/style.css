@@ -759,3 +759,8 @@ label[for="comment"] {
   text-decoration: underline;
   color: var(--accent-color);
 }
+
+.modal-svg {
+  width: 18px;
+  height: 18px;
+}

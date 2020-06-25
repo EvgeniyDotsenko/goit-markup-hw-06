@@ -782,3 +782,11 @@ label[for="comment"] {
   text-align: center;
   color: var(--title-text-color);
 }
+
+.modal-item {
+  position: relative;
+}
+
+#comment {
+  resize: none;
+}

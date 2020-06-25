@@ -53,17 +53,32 @@
 
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <form action="">
+          <form>
             <b>Оставьте свои данные, мы вам перезвоним</b>
 
-            <input type="text" name="name" id="name" class="modal-input" />
-            <label for="name"></label>
+            <div>
+              <input type="text" name="name" id="name" class="modal-input" />
+              <label for="name">Имя</label>
+              <svg>
+                <use href="././img/symbol-modal.svg#icon-modal-person"></use>
+              </svg>
+            </div>
 
-            <input type="tel" name="tel" id="tel" class="modal-input" />
-            <label for="tel"></label>
+            <div>
+              <input type="tel" name="tel" id="tel" class="modal-input" />
+              <label for="tel">Телефон</label>
+              <svg>
+                <use href="././img/symbol-modal.svg#icon-modal-phone"></use>
+              </svg>
+            </div>
 
-            <input type="email" name="email" id="email" class="modal-input" />
-            <label for="email"></label>
+            <div>
+              <input type="email" name="email" id="email" class="modal-input" />
+              <label for="email">Почта</label>
+              <svg>
+                <use href="././img/symbol-modal.svg#icon-modal-email"></use>
+              </svg>
+            </div>
 
             <textarea name="comment" id="comment" rows="10"></textarea>
             <label for="comment">Комментарий</label>
@@ -76,7 +91,11 @@
 
             <button type="submit">Отправить</button>
 
-            <button data-modal-close aria-label="закрыть">close</button>
+            <button data-modal-close aria-label="закрыть">
+              <svg>
+                <use href="././img/symbol-modal.svg#icon-modal-close"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>

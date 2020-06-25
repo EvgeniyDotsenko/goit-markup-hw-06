@@ -54,7 +54,7 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <form>
-            <b>Оставьте свои данные, мы вам перезвоним</b>
+            <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
 
             <div>
               <input type="text" name="name" id="name" class="modal-input" />
@@ -84,7 +84,7 @@
             <label for="comment">Комментарий</label>
 
             <label class="agreement">
-              <input type="checkbox" />
+              <input type="checkbox" name="agreement" />
               <span>Соглашаюсь с рассылкой и принимаю </span>
               <a href="">Условия договора</a>
             </label>
@@ -92,7 +92,7 @@
             <button type="submit">Отправить</button>
 
             <button data-modal-close aria-label="закрыть" class="close">
-              <svg>
+              <svg class="close-svg">
                 <use href="././img/symbol-modal.svg#icon-modal-close"></use>
               </svg>
             </button>

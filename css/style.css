@@ -697,6 +697,7 @@ footer .logo {
   display: none;
 }
 
+/* modal + backdrop */
 .backdrop {
   position: fixed;
   top: 0;
@@ -724,7 +725,7 @@ footer .logo {
   left: 50%;
 
   width: 528px;
-  height: 581px;
+  min-height: 581px;
 
   background: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -749,11 +750,11 @@ footer .logo {
 
 label[for="comment"] {
   display: block;
-}
+} */
 
 .agreement {
   display: block;
-} */
+}
 
 .agreement a {
   text-decoration: underline;
@@ -765,7 +766,18 @@ label[for="comment"] {
   height: 18px;
 }
 
-.close {
+.close-svg {
   width: 30px;
   height: 30px;
+}
+
+.modal-title {
+  display: inline-block;
+  padding: 0;
+  margin: 40px 40px 30px 40px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-text-color);
 }

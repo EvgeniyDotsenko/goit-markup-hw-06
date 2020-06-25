@@ -737,25 +737,6 @@ footer .logo {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 
-.modal ~ button {
-  display: block;
-}
-
-label[for="comment"] {
-  display: block;
-} */
-
-.agreement {
-  display: block;
-  margin-bottom: 30px;
-}
-
-.agreement a {
-  text-decoration: underline;
-  color: var(--accent-color);
-}
-
 .modal-svg {
   width: 18px;
   height: 18px;
@@ -810,6 +791,16 @@ label[for="comment"] {
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.agreement {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.agreement a {
+  text-decoration: underline;
+  color: var(--accent-color);
 }
 
 .modal-submit {

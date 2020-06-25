@@ -49,9 +49,9 @@
         accusantium provident laudantium ea ex voluptatem?
       </p>
 
-      <button data-open-modal>open</button>
+      <button data-modal-open>open</button>
 
-      <div class="backdrop is-hidden" data-backdrop>
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <form action="">
             <b>Оставьте свои данные, мы вам перезвоним</b>
@@ -68,7 +68,7 @@
             <textarea name="comment" id="comment" rows="10"></textarea>
             <label for="comment">Комментарий</label>
 
-            <label for="" class="agreement">
+            <label class="agreement">
               <input type="checkbox" />
               <span>Соглашаюсь с рассылкой и принимаю </span>
               <a href="">Условия договора</a>
@@ -76,7 +76,7 @@
 
             <button type="submit">Отправить</button>
 
-            <button data-close-modal aria-label="закрыть">close</button>
+            <button data-modal-close aria-label="закрыть">close</button>
           </form>
         </div>
       </div>
@@ -153,25 +153,6 @@
       </div>
     </footer>
 
-    <script>
-      const refs = {
-        openModalBtn: document.querySelector("[data-open-modal]"),
-        closeModalBtn: document.querySelector("[data-close-modal]"),
-        backdrop: document.querySelector("[data-backdrop]"),
-      };
-
-      refs.openModalBtn.addEventListener("click", toggleModal);
-      refs.closeModalBtn.addEventListener("click", toggleModal);
-
-      refs.backdrop.addEventListener("click", logBackdropClick);
-
-      function toggleModal() {
-        refs.backdrop.classList.toggle("is-hidden");
-      }
-
-      function logBackdropClick() {
-        console.log("Это клик в бекдроп");
-      }
-    </script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

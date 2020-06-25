@@ -764,3 +764,8 @@ label[for="comment"] {
   width: 18px;
   height: 18px;
 }
+
+.close {
+  width: 30px;
+  height: 30px;
+}

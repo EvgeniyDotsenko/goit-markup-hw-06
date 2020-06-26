@@ -813,3 +813,20 @@ footer .logo {
   top: 0;
   right: 0;
 }
+
+.modal-input:focus + label {
+  color: var(--accent-color);
+}
+
+.modal-input:focus ~ .modal-svg {
+  color: var(--accent-color);
+}
+
+#comment:focus + label {
+  color: var(--accent-color);
+}
+
+.modal-close:focus > .close-svg,
+.modal-close:hover > .close-svg {
+  color: var(--accent-color);
+}

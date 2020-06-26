@@ -771,6 +771,13 @@ footer .logo {
   border-radius: 4px;
 }
 
+.modal-label {
+  position: absolute;
+  top: 50%;
+  left: 82px;
+  transform: translateY(-50%);
+}
+
 .modal-item > label,
 .modal-textarea > label {
   font-weight: normal;
@@ -791,6 +798,12 @@ footer .logo {
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.modal-textarea > label {
+  position: absolute;
+  top: 12px;
+  left: 16px;
 }
 
 .agreement {
@@ -820,6 +833,7 @@ footer .logo {
 
 .modal-input:focus ~ .modal-svg {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 #comment:focus + label {
@@ -829,4 +843,6 @@ footer .logo {
 .modal-close:focus > .close-svg,
 .modal-close:hover > .close-svg {
   color: var(--accent-color);
+  fill: var(--accent-color);
+  --color2: var(--accent-color);
 }

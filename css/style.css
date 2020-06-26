@@ -829,10 +829,12 @@ footer .logo {
 
 .modal-close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
   padding: 0;
   margin: 0;
+  width: 30px;
+  height: 30px;
 
   border: none;
   background: none;

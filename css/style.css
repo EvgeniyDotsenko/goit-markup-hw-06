@@ -820,6 +820,12 @@ footer .logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal-submit:focus,
+.modal-submit:hover {
+  background: #188ce8;
 }
 
 .close-svg {
@@ -840,18 +846,28 @@ footer .logo {
   background: none;
 }
 
+.modal-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
 .modal-input:focus + .modal-label {
   color: var(--accent-color);
-  transform: translate(-26px, -32px);
+  transform: translate(-26px, -40px);
 }
 
 .modal-input:focus ~ .modal-svg {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
+#comment:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
 
 #comment:focus + label {
   color: var(--accent-color);
+  transform: translateY(-32px);
 }
 
 .modal-close:focus > .close-svg,

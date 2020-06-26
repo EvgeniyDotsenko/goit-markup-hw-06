@@ -850,8 +850,39 @@ footer .logo {
 }
 
 .agreement {
-  display: block;
+  display: flex;
+  align-items: center;
   margin-bottom: 30px;
+}
+
+.agreement-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.agreement-input:checked + .chek {
+  background-color: var(--accent-color);
+  background-image: url("../img/icon-check.svg");
+  background-size: contain;
+  background-origin: border-box;
+  border-color: transparent;
+}
+
+.chek {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 4px;
+}
+
+.chek + span {
+  padding-left: 8px;
 }
 
 .agreement a {

@@ -738,6 +738,11 @@ footer .logo {
 }
 
 .modal-svg {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
   width: 18px;
   height: 18px;
 }
@@ -774,7 +779,7 @@ footer .logo {
 .modal-label {
   position: absolute;
   top: 50%;
-  left: 82px;
+  left: 42px;
   transform: translateY(-50%);
 }
 

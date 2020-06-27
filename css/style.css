@@ -570,7 +570,8 @@ footer .logo {
 }
 
 /* Портфолио */
-.portfolio-header {
+.portfolio-header,
+.contact-header {
   border-bottom: 1px solid #ececec;
 }
 
